@@ -1,2 +1,2 @@
-# loop-1
+# loop
 print 1toN numbers
