@@ -1,2 +1,2 @@
 # loop
-print 1toN numbers
+TRYING TO MASTER FROM VERY BEGGINING...
