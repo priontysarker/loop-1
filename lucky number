@@ -1,0 +1,39 @@
+#include <iostream>
+using namespace std;
+ 
+int main()
+{
+  int A,B;
+  cin>>A>>B;
+  
+  int lucky_count=0;
+  
+  for(int i=A;i<=B;++i){
+      
+      int temp=i;
+      bool is_lucky=true;
+      
+      while(temp>0){
+          int digit=temp%10;
+          
+          if(digit!=4 && digit!=7){
+              is_lucky=false;
+              break;
+          }
+          
+          temp/=10;
+      }
+  
+  
+  if(is_lucky){
+      cout<<i<<" ";
+      lucky_count++;
+  }
+  }
+  
+  if(lucky_count==0){
+      cout<<"-1"<<"\n";
+  }
+  
+  return 0;
+}
