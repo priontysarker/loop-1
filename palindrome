@@ -1,0 +1,33 @@
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+ 
+int main()
+{
+    string S;
+    cin>>S;
+    
+    string reversed_S = S;
+    reverse(reversed_S.begin(),reversed_S.end());
+    
+    
+    int start_index=0;
+    while(start_index<reversed_S.length() && reversed_S[start_index]=='0'){
+        start_index++;
+    }
+    
+    
+    string final_reversed = reversed_S.substr(start_index);
+    
+    cout<<final_reversed<<"\n";
+    
+    
+    if(S==reversed_S){
+        cout<<"YES"<< "\n";
+    }else{
+         cout<<"NO"<< "\n";
+    }
+   
+    return 0;
+}
